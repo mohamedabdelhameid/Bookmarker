@@ -98,7 +98,7 @@ let validationName = () => {
 };
 
 let validationUrl = () => {
-  const bookUrlRegex = /^https:\\\\[A-Za-z0-9_\\]{2,}\.[a-z]{2,}$/;
+  const bookUrlRegex = /^https:\\\\[A-Za-z0-9_\\]{2,}\.[a-z]{2,}\\[A-Za-z0-9_\\\-\']{2,}$/;
 
   if (bookUrlRegex.test(bookUrl.value)) {
     bookUrl.classList.add("is-valid");
@@ -117,3 +117,4 @@ let validationUrl = () => {
   }
 
 };
+
